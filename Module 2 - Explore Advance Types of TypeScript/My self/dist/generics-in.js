@@ -1,0 +1,42 @@
+"use strict";
+//  dynamically generalize kora
+// const friends: string[] = ["murad", "nowshad", "muaz"];
+const friends = ["murad", "nowshad", "muaz"];
+// sme to
+// const friends: Array<string> = ["murad", "nowshad", "muaz"];
+// const rollNo: number[] = [4, 7, 11];
+//similar way
+// const rollNo: Array<number> = [4, 7, 11];
+const rollNo = [4, 7, 11];
+// const isEligibleList: boolean[] = [true, false, true];
+// const isEligibleList: Array<boolean> = [true, false, true];
+const isEligibleList = [true, false, true];
+//same type er upor generic array implements kora hoise
+const coordinates = [20, 30];
+const coordinatesString = ["20", "30"];
+//* use case its array of object generic object
+// const userList: GenArray<object> =
+//   // ? dont use it. some demerits site
+//   [
+//     {
+//       name: "hablu",
+//       age: 22,
+//     },
+//     {
+//       name: "tablu",
+//       age: 25,
+//     },
+//   ];
+// but  here is current way to use generic array
+const userList =
+  // ? dont use it. some demerits site
+  [
+    {
+      name: "hablu",
+      age: 22,
+    },
+    {
+      name: "tablu",
+      age: 25,
+    },
+  ];

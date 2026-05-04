@@ -55,10 +55,10 @@ const getPropertyFromObj = <X>(obj: X, key: keyof X) =>
     //? error => cannot find key. I means ID... arrow put dowm for User type used || Keyof User
   };
 const result3 = getPropertyFromObj(user, "name");
-console.log(result);
+// console.log(result);
 
 const product = {
   brand: "HP",
 };
 
-const result5 = getPropertyFromObj(product, "brand"); //its cannot work for defind User type
+const result5 = getPropertyFromObj(product, "brand"); //? its cannot work for define User type

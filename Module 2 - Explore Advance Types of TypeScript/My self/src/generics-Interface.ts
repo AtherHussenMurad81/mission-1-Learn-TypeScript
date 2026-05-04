@@ -16,7 +16,7 @@ const userList: GenericArr<User> = [
 
 // generic with interface
 // poor type
-interface Developer<T> {
+interface Developer<T, X = null> {
   name: string;
   salary: number;
   device: {
@@ -25,6 +25,7 @@ interface Developer<T> {
     releasedYear: string;
   };
   smartWatch: T;
+  bike?: X;
 }
 
 // ? Rich type
@@ -41,7 +42,13 @@ interface BrandWithWatch {
   calculator: boolean;
   aiFeature: boolean;
 }
-const poorDev: Developer<BrandSaraWatch> =
+const poorDev: Developer<
+  BrandSaraWatch,
+  {
+    brand: "yamaha";
+    engineCap: "200cc";
+  }
+> =
   //{
   //   heartRate: string;
   //   stopWatch: boolean;
@@ -62,13 +69,14 @@ const poorDev: Developer<BrandSaraWatch> =
 
 // ...................
 
-const richDev: Developer<BrandWithWatch> =
-// {
-//   heartRate: string;
-//   callSupport: boolean;
-//   calculator: boolean;
-//   aiFeature: boolean;
-// }
+const richDev: //default value === null
+Developer<BrandWithWatch> =
+  // {
+  //   heartRate: string;
+  //   callSupport: boolean;
+  //   calculator: boolean;
+  //   aiFeature: boolean;
+  // }
   {
     name: "mr rich",
     salary: 20000,
@@ -83,4 +91,5 @@ const richDev: Developer<BrandWithWatch> =
       calculator: true,
       aiFeature: true,
     },
+    bike: null,
   };

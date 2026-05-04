@@ -48,12 +48,17 @@ const coordinatesString: GenArray<string> = ["20", "30"];
 //       age: 25,
 //     },
 //   ];
-
-// but  here is current way to use generic array
-const userList: GenArray<{
+interface UserList {
   name: string;
   age: number;
-}> =
+}
+
+// but  here is current way to use generic array
+const userList5: GenArray<UserList> =
+  // {
+  //   name: string;
+  //   age: number;
+  // }
   // ? dont use it. some demerits site
   [
     {

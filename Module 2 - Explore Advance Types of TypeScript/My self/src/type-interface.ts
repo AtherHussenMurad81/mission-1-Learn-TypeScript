@@ -22,6 +22,7 @@ const user2: UserWithRole = {
 };
 
 //  type Interface below
+
 // interface only work in object type dataType like:- array, object and function
 interface IUser {
   name: string;
@@ -37,6 +38,7 @@ interface IAdd {
   (num1: number, num2: number): number;
 }
 const add: Add = (num1, num2) => num1 + num2;
+const addI: IAdd = (num1, num2) => num1 + num2;
 
 // .............
 
@@ -47,6 +49,6 @@ type Friends = string[];
 interface IFriends {
   [index: number]: string; //indexing.
 }
-const friends: IFriends = ["a", "b", "c"];
+const friends2: IFriends = ["a", "b", "c"];
 
-// kokon kunta use korbo
+// kokon kunta use korbo => always simplicity maintain korar try korbo...

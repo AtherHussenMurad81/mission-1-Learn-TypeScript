@@ -1,4 +1,4 @@
-type User = {
+type User1 = {
   name: string;
   age: number;
 };
@@ -11,7 +11,7 @@ type UserWithRole = User & Role;
 interface IuserWithRole extends IUser {
   role: "admin" | "user";
 }
-const user1: User = {
+const user1: User1 = {
   name: "Murad",
   age: 100,
 };

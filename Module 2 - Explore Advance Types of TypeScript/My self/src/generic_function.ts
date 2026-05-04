@@ -17,6 +17,7 @@ const arrObject = createArrayWithUserObj({
 });
 
 // * constraint: strict rules deya
+
 //? generic function implements
 
 const addStudentToCourse1 = <T>(studentInfo: T) => {

@@ -1,9 +1,9 @@
-//  ami jodi TS teke besi buji. Setai type assertion
+//*  ami jodi TS teke besi buji. Setai type assertion
 // for example
 
 let anything: any;
 
-// anything.  kisui dibe na. because ts bujtase na ki dibe
+//? anything.  kisui dibe na. because ts bujtase na ki dibe
 // but
 
 anything = 222;

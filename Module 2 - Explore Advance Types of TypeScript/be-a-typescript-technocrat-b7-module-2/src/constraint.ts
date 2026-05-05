@@ -1,8 +1,8 @@
 // constraint : strict rules deya
 
-type Stuent = { id: number; name: string; dateOfBirth: string; class: string };
+type Student = { id: number; name: string; dateOfBirth: string; class: string };
 
-const addStudentToCourse = <T extends Stuent>(studentInfo: T) => {
+const addStudentToCourse = <T extends Student>(studentInfo: T) => {
   return {
     course: "Next Level",
     ...studentInfo,

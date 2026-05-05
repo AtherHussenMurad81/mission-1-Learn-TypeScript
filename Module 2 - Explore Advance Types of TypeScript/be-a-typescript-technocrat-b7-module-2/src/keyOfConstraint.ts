@@ -52,3 +52,4 @@ const student = {
 
 const result2 = getPropertyFromObj(product, "brand");
 const result3 = getPropertyFromObj(student, "id");
+console.log(result2);

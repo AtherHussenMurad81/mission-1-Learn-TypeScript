@@ -1,6 +1,7 @@
 // Generic Function
 
 // const createArrayWithString = (value: string) => [value];
+// console.log(createArrayWithString("murad"));
 
 // const createArrayWithNumber = (value: number) => [value];
 
@@ -57,4 +58,4 @@ const student2 = {
 };
 
 const result = addStudentToCourse(student2);
-console.log(result);
+// console.log(result);

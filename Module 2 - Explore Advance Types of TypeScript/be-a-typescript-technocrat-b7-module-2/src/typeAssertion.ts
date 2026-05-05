@@ -3,7 +3,7 @@ let anything: any;
 anything = "Mezba";
 
 const kgToGMConverter = (
-  input: string | number
+  input: string | number,
 ): string | number | undefined => {
   if (typeof input === "number") {
     return input * 1000;

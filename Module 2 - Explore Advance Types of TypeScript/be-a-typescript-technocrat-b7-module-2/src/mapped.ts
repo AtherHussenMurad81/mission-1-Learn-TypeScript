@@ -29,9 +29,9 @@ type height = AreaOfNum["height"];
 type Area<T> = {
   [key in keyof T]: T[key];
 
+};
   // key >> height >> string
   // key >> width >> number
-};
 
 /*
 

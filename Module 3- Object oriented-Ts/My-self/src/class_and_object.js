@@ -1,5 +1,5 @@
+"use strict";
 // ? opp =- class - object
-
 // * property define kora hoise
 // class Animal {
 //   name: string;
@@ -14,17 +14,14 @@
 // const dog = new Animal("doges", "dogsp", "ghew ghew");
 // dog.name;
 // // console.log(dog); //? Output: Animal { name: 'doges', species: 'dogsp', sound: 'ghew ghew' }
-
 // const cat = new Animal("cat bhai", "cet", "mew mew");
 // console.log(cat);
-
 //* ....................
-
 // class Animal {
 //   name: string;
 //   species: string;
 //   sound: string;
-//   constructor(name: string, species: string, sound: string) {
+//   constrccuctor(name: string, species: string, sound: string) {
 //     this.name = name;
 //     this.species = species;
 //     this.sound = sound;
@@ -37,18 +34,17 @@
 // const cat = new Animal("cat bhai", "cet", "mew mew");
 // const dog = new Animal("doges", "dogsp", "ghew ghew");
 // console.log(cat.makeSound()); //undefined
-
 // dog.makeSound();
-
 // ? Parameter properties
-//* its convert tsc filename diya js ye convert kore tarpor js dile run korle code run hobe. na hoy hobe na
 class Animal {
-  constructor(
-    public name: string,
-    public species: string,
-    public sound: string,
-  ) {}
-
+  name;
+  species;
+  sound;
+  constructor(name, species, sound) {
+    this.name = name;
+    this.species = species;
+    this.sound = sound;
+  }
   makeSound() {
     console.log(`${this.name} is making sound: ${this.sound}`);
   }

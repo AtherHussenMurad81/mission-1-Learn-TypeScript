@@ -38,11 +38,11 @@
 //  But here
 // class Counter {
 //   static count: number = 0;
-//   static increment() {
+//    increment() {
 //     return (Counter.count = Counter.count + 1);
 //   }
 
-//   static decrement() {
+//    decrement() {
 //     return (Counter.count = Counter.count - 1);
 //   }
 // }

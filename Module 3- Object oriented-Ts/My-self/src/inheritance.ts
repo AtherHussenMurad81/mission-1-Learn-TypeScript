@@ -1,14 +1,14 @@
-//? class Student {
-//?   name: string;
-//?   age: number;
-//?   address: string;
-//?   constructor(name: string, age: number, address: string) {
-//?     this.name = name;
-//?     this.age = age;
-//?     this.address = address;
-//?   }
-
-//   //?   vitorer value ta nite this.key use kori. bairer gula //? function er parameter  {example (numofHour)} hisabe receive korte hoy...
+// class Student {
+//   name: string;
+//   age: number;
+//   address: string;
+//   constructor(name: string, age: number, address: string) {
+//     this.name = name;
+//     this.age = age;
+//     this.address = address;
+//   }
+//     vitorer value ta nite this.key use kori. bairer gula //? function
+//        er parameter  {example (numofHour)} hisabe receive korte hoy...
 
 //   getSleep(numOFhours: number) {
 //     console.log(`${this.name} ${numOFhours} gonta gumaw`);
@@ -22,25 +22,23 @@
 
 // //? >>>>>>>>>>>>>>>>>//?
 
-//? class Teacher {
-//?   name: string;
-//?   age: number;
-//?   address: string;
-//?   designation: string;
-//?   constructor(name: string, age: number, address: string, designation: string) {
-//?     this.name = name;
-//?     this.age = age;
-//?     this.address = address;
-//?     this.designation = designation;
-//?   }
-//?   takeClass(classTime: number) {
-//?     console.log(`${this.name} ${classTime} gonta class nen`);
-//?   }
-//? }
-
-// ?const sharifSir = new Teacher("Sharif Sir", 40, "Sylhet", "Teacher");
-
-//? sharifSir.takeClass(20);
+// class Teacher {
+//   name: string;
+//   age: number;
+//   address: string;
+//   designation: string;
+//   constructor(name: string, age: number, address: string, designation: string) {
+//     this.name = name;
+//     this.age = age;
+//     this.address = address;
+//     this.designation = designation;
+//   }
+//   takeClass(classTime: number) {
+//     console.log(`${this.name} ${classTime} gonta class nen`);
+//   }
+// }
+// const sharifSir = new Teacher("Sharif Sir", 40, "Sylhet", "Teacher");
+// sharifSir.takeClass(20);
 
 // *.................
 

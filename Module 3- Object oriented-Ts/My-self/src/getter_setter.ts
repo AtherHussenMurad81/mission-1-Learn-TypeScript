@@ -1,10 +1,3 @@
-// access >> modify
-
-// arrow function ye this. kaj kore na
-// ? normal function ye this. kaj kore. so always this. use korte
-
-// access >> modify
-
 // class BankAccount {
 //   public readonly userId: number;
 //   public userName: string;
@@ -58,8 +51,6 @@ class BankAccount {
     this._userBalance = userBalance;
   }
 
-  //    set the balance
-
   // setter use kore
 
   set addBalance(amount: number) {
@@ -67,10 +58,6 @@ class BankAccount {
 
     this._userBalance = this._userBalance + amount;
   }
-
-  //   getBalance() {
-  //     return this._userBalance;
-  //   }
 
   //   getter use kore get kora hoise
   get getBalance() {
@@ -80,6 +67,7 @@ class BankAccount {
 
 const mezbaBhaiAccount2 = new BankAccount(111, "Mezba", 20);
 
-mezbaBhaiAccount2.addBalance = 100;
+const add = (mezbaBhaiAccount2.addBalance = 100);
+const balance = mezbaBhaiAccount2.getBalance;
 
-console.log(mezbaBhaiAccount2); // Output: => BankAccount { userId: 111, userName: 'Mezba', _userBalance: 120 }
+// Output: => BankAccount { userId: 111, userName: 'Mezba', _userBalance: 120 }
